@@ -1,0 +1,69 @@
+footer{
+    &.footer{
+        padding: 3rem 0 0;
+        background-color: $cor1;
+        color: $cor2;
+        address{
+            padding: 1.5rem 0 0.5rem;
+            font-size: 0.9rem;
+            div{
+                padding: 0.5rem 0;
+                i, svg{
+                    font-size: 1rem;
+                    margin-right: 0.5rem;
+                    color: $cor7;
+                }
+            }
+        }
+        .tags{
+            .label{
+                margin: 2px;
+                background: $cor5;
+            }
+        }
+    }
+    .copy{
+        background-color: $cor6;
+        padding: 0.3rem;
+        margin-top: 2rem;
+        color: $cor5;
+        p{
+            margin: 0;
+        }
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    footer{
+        &.footer{
+            address{
+                div{
+                    padding: 0.3rem 0;
+                    &.tel{
+                        display: inline-block;
+                        margin-right: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    footer{
+        &.footer{
+            address{
+                div{
+                    padding: 0.3rem 0;
+                    &.tel{
+                        display: inline-block;
+                        margin-right: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

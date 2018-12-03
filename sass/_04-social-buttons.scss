@@ -1,0 +1,18 @@
+.social-media{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li{
+        a{
+            margin-bottom: 0;
+            background: none;
+            color: $cor3;
+            &:hover, &:focus{
+                background: none;
+                color: $cor1;
+            }
+        }
+    }
+}

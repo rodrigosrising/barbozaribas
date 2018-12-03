@@ -1,0 +1,61 @@
+header.header
+    .headerContainer
+        .headerTop.show-for-medium
+            .grid-container
+                .grid-x.grid-margin-x.align-middle
+                    .cell.auto
+                        span.endereco  #[i.fas.fa-map-marker-alt] Av Cândido Hartmann, 528, sala 72 - Curitiba – PR
+                        span.email #[i.fas.fa-envelope-open-text] contabilidade@barbozaribas.com.br
+                    .cell.shrink
+                        .phone
+                            span #[i.fas.fa-phone] 41 3339-3884
+
+        .headerMiddle
+            .grid-container
+                .grid-x.grid-margin-x.align-middle
+                    .cell.shrink
+                        a(href="index.html" class="custom-logo-link")
+                            img(src="assets/img/logosite2.png" alt="" class="custom-logo")
+                    .cell.auto
+                        .openNav.hide-for-large
+                            span.navButton.float-right #[i.fas.fa-stream]
+                        nav.menuHeader.show-for-large
+                            ul.menu.align-right
+                                li
+                                    a(href="") Home
+                                li
+                                    a(href="") Quem Somos
+                                li
+                                    a(href="") Nossos Serviços
+                                li
+                                    a(href="") Notícias
+                                li
+                                    a(href="") Contato
+
+
+        div(data-sticky-container)
+            div(class="headerMiddle headerMiddleSticky sticky", data-sticky, data-top-anchor="topAnchor:top", data-sticky-on="small")
+                .grid-container
+                    .grid-x.grid-margin-x.align-middle
+                        .cell.shrink
+                            a(href="index.html" class="custom-logo-link")
+                                img(src="assets/img/logosite.png" alt="" class="custom-logo")
+                        .cell.auto
+                            .openNav.hide-for-large
+                                span.navButton.float-right #[i.fas.fa-stream]
+                            nav.menuHeader.show-for-large
+                                ul.menu.align-right
+                                    li
+                                        a(href="") Home
+                                    li
+                                        a(href="") Quem Somos
+                                    li
+                                        a(href="") Nossos Serviços
+                                    li
+                                        a(href="") Notícias
+                                    li
+                                        a(href="") Contato
+
+        #topAnchor
+
+    .headerBanner

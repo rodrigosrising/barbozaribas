@@ -1,0 +1,16 @@
+.pagination-area{
+    .pagination{
+        li, li a{
+            color: $cor1;
+            font-weight: bold;
+            &:hover{
+                background: none;
+                color: $cor2;
+            }
+            &.current{
+                background: none;
+                color: $cor2;
+            }
+        }
+    }
+}

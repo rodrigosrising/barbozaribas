@@ -1,0 +1,98 @@
+.header{
+    &Container{
+        width: 100vw;
+        // background-color: $cor2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    &Top{
+        background-color: $cor1;
+        color: $cor2;
+        font-size: 0.9rem;
+        overflow-x: hidden;
+        z-index: 5;
+        position: relative;
+        span{
+            display: inline-block;
+            padding: 0 0.987rem;
+            i, svg{
+                margin-right: 0.3rem;
+                color: $cor3;
+            }
+            &.endereco, &.email{
+                border-left: 1px solid $cor5;
+            }
+            &:first-child{
+                border: none;
+                padding-left: 0;
+            }
+        }
+        .phone{
+            background-color: $cor7;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.3rem 0.9rem;
+            position: relative;
+
+            &:after{
+                content: "";
+                display: block;
+                background-color: $cor7;
+                width: 100vw;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                z-index: 1;
+            }
+            span{
+                padding: 0;
+                position: relative;
+                z-index: 5;
+                i, svg{
+                    color: $cor1;
+                }
+            }
+        }
+    }
+    &Middle{
+        padding: 0.7rem 0;
+        &Sticky{
+            background-color: $cor2;
+            opacity: 0;
+            visibility: hidden;
+            // display: none;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            transform: translateY(-100%);
+            // transition: 0.5s all ease-in-out;
+            transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.4s ease-in-out;
+            margin-top: 0!important;
+            .custom-logo{
+                width: 75%;
+            }
+            &.is-stuck{
+                opacity: 1;
+                visibility: visible;
+                display: block;
+                transform: translateY(0%);
+            }
+        }
+    }
+
+    #topAnchor{
+        visibility: hidden;
+        opacity: 0;
+    }
+    &Banner{
+        width: 100vw;
+        height: 80vh;
+        background-image: url(../img/banner2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+}

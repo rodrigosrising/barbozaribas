@@ -1,0 +1,153 @@
+body,
+html {
+    overflow-x: hidden;
+    background: $branco;
+    color: $cor5;
+}
+
+/*==========================NOVO=============================*/
+.overflow-hidden{
+    overflow: hidden!important;
+}
+.spacing20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.spacingTop{
+    padding-top: 20px;
+}
+img{
+    border-radius: 5px;
+    align-self: center;
+}
+:focus {
+    outline: none;
+}
+
+::selection {
+    background: $cor1;
+    color: $branco;
+    text-shadow: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $cor2;
+    /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $cor2;
+    /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $cor2;
+    /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: $cor2;
+    /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+blockquote {
+    border-left: none;
+    width: 75%;
+    color: $cor2;
+    margin: 0 auto 2rem;
+}
+
+hr {
+    border-bottom: 1px dotted $cor1;
+    width: 100%;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+address p {
+    margin-bottom: 0.5rem;
+}
+
+address i {
+    color: #FF0;
+}
+
+// a {
+//     color: $preto;
+//     &:hover,
+//     &:focus {
+//         color: $cor2;
+//     }
+// }
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+    border-color: lighten( $cor2, 65%);
+    background-color: $branco;
+    color: #828282;
+    text-shadow: 1px 1px 1px lighten( $cor2, 60%);
+}
+
+[type='text']:focus,
+[type='password']:focus,
+[type='date']:focus,
+[type='datetime']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='week']:focus,
+[type='email']:focus,
+[type='number']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='color']:focus,
+textarea:focus {
+    border-color: transparent;
+    background-color: $branco;
+    box-shadow: inset 2px 2px 8px lighten($preto, 85%);
+}
+
+/*TITLE*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: $cor1;
+
+}
+
+.titulo{
+    text-transform: uppercase;
+    border-bottom: 4px solid $cor7;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
