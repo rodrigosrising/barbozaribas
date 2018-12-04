@@ -642,6 +642,14 @@ section.noticias .noticia h3 a {
   color: #11284B;
 }
 
+section.noticias .noticia .imgBox {
+  margin-bottom: 2rem;
+}
+
+section.noticias .noticia .imgBox img {
+  width: 100%;
+}
+
 section.noticias .widget-sidebar {
   padding: 0.987rem 0 1.8rem 0;
   margin-bottom: 0.987rem;

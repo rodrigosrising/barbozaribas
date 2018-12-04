@@ -28,6 +28,12 @@ section{
                     color: $cor1;
                 }
             }
+            .imgBox{
+                margin-bottom: 2rem;
+                img{
+                    width: 100%;
+                }
+            }
         }
         .widget{
             &-sidebar{
