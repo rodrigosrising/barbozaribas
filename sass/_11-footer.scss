@@ -38,6 +38,17 @@ footer{
             margin: 0;
         }
     }
+    .chatWhats{
+        background: #34af23;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 15;
+        margin: 0;
+        a{
+            color: $branco;
+        }
+    }
 }
 
 /* Medium and up */
