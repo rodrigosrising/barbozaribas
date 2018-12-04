@@ -22,10 +22,17 @@ footer{
             }
         }
     }
+    .mapa{
+        margin-top: 3rem;
+        iframe{
+            height: 100vh;
+            width: 100vw;
+            max-height: 300px;
+        }
+    }
     .copy{
         background-color: $cor6;
         padding: 0.3rem;
-        margin-top: 2rem;
         color: $cor5;
         p{
             margin: 0;

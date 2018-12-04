@@ -1,0 +1,40 @@
+section.contato
+    .grid-container
+        .grid-x.grid-margin-x
+            .cell.small-12
+                h1.titulo Contato
+            .cell.small-12.medium-7.large-8.formBox
+                form(action="")
+                    .grid-container
+                        .grid-x.grid-padding-x
+                            .cell.small-12.medium-6
+                                label Nome
+                                    input(type="text")
+                            .cell.small-12.medium-6
+                                label Telefone
+                                    input(type="tel")
+                            .cell.small-12
+                                label Email
+                                    input(type="email")
+                            .cell.small-12
+                                label Mensagem
+                                    textarea(name="", cols="30", rows="10")
+                            .cell.small-12
+                                input(type="submit", class="button buttonWide uppercase")
+
+            .cell.small-12.medium-5.large-4
+                address
+                    h5 Endereço
+                    div #[i.fas.fa-map-marker-alt] Av Cândido Hartmann, 528, sala 72 - Curitiba – PR
+                    div #[i.fas.fa-envelope-open-text] contabilidade@barbozaribas.com.br
+                    hr
+                    h5 Contato
+                    div.tel #[i.fas.fa-phone] 41 3339-3884
+                    div.tel #[i.fas.fa-mobile-alt] 41 99860-8103
+                    div.tel #[i.fas.fa-mobile-alt] 41 99535-6234
+                    hr
+                    h5 Atendimento
+                    div #[i.fas.fa-clock] Seg á Sex dás 8:30 às 18H
+                    hr
+                    include social-media
+

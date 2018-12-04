@@ -95,4 +95,36 @@
         background-size: cover;
         position: relative;
     }
+    &Interna{
+        height: 155px;
+    }
+}
+
+.breadcrumbsContainer{
+    background: $cor2;
+    position: relative;
+    z-index: 20;
+    .breadcrumbs{
+        margin-bottom: 0;
+        padding: 0.7rem 0;
+        display: flex;
+        align-items: baseline;
+        li{
+            color: $cor1;
+            &.disabled{
+                color: $cor3;
+            }
+            i, svg{
+                font-size: 0.9rem;
+                margin-right: 0.3rem;
+                color: $cor4;
+            }
+            a{
+                color: $cor4;
+                &:focus, &:hover{
+                    color: $cor1;
+                }
+            }
+        }
+    }
 }

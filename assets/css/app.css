@@ -78,7 +78,7 @@ blockquote {
 }
 
 hr {
-  border-bottom: 1px dotted #11284B;
+  border-bottom: 1px solid #e8e8e3;
   width: 100%;
 }
 
@@ -156,9 +156,17 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+.button {
+  background: #11284B;
+}
+
+.button.buttonWide {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .leiaMais {
   color: #546A7B;
-  border-bottom: 1px dotted #C6C5B9;
   padding-bottom: 0.2rem;
 }
 
@@ -166,6 +174,11 @@ h6 {
 .leiaMais svg {
   margin-right: 0.3rem;
   color: #2ba6cb;
+}
+
+.leiaMais:hover,
+.leiaMais:focus {
+  color: #11284B;
 }
 
 .social-media {
@@ -177,15 +190,14 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .social-media li a {
   margin-bottom: 0;
+  margin-right: 1rem;
+  font-size: 1.2rem;
   background: none;
-  color: #C6C5B9;
+  color: #2ba6cb;
 }
 
 .social-media li a:hover,
@@ -309,11 +321,55 @@ h6 {
   position: relative;
 }
 
+.headerInterna {
+  height: 155px;
+}
+
+.breadcrumbsContainer {
+  background: #F9F9F8;
+  position: relative;
+  z-index: 20;
+}
+
+.breadcrumbsContainer .breadcrumbs {
+  margin-bottom: 0;
+  padding: 0.7rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.breadcrumbsContainer .breadcrumbs li {
+  color: #11284B;
+}
+
+.breadcrumbsContainer .breadcrumbs li.disabled {
+  color: #C6C5B9;
+}
+
+.breadcrumbsContainer .breadcrumbs li i,
+.breadcrumbsContainer .breadcrumbs li svg {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
+  color: #62929E;
+}
+
+.breadcrumbsContainer .breadcrumbs li a {
+  color: #62929E;
+}
+
+.breadcrumbsContainer .breadcrumbs li a:focus,
+.breadcrumbsContainer .breadcrumbs li a:hover {
+  color: #11284B;
+}
+
 .menu a {
   text-transform: uppercase;
   font-weight: bold;
   color: #F9F9F8;
-  text-shadow: 1px 1px 0px #C6C5B9;
 }
 
 .navButton {
@@ -384,7 +440,7 @@ main.main section {
 }
 
 main.main section.servicos {
-  background: #F9F9F8;
+  background: #FFF;
 }
 
 main.main section.servicos .servicoBox {
@@ -411,6 +467,32 @@ main.main section.servicos .servicoBox-body {
 
 main.main section.servicos .servicoBox-body h4 {
   font-size: 1.2rem;
+}
+
+main.main section.servicos-page .servico {
+  border-bottom: 1px solid #e8e8e3;
+  padding-top: 1.2rem;
+}
+
+main.main section.servicos-page .servico .servicoBox {
+  padding: 0.987rem 0;
+}
+
+main.main section.servicos-page .servico .servicoBox-left {
+  display: table-cell;
+  width: 80px;
+  max-width: 50px;
+  padding-right: 0.6rem;
+}
+
+main.main section.servicos-page .servico .servicoBox-left i,
+main.main section.servicos-page .servico .servicoBox-left svg {
+  font-size: 3rem;
+  color: #62929E;
+}
+
+main.main section.servicos-page .servico:last-child {
+  border-bottom: none;
 }
 
 main.main section.linksHome {
@@ -472,9 +554,113 @@ main.main section.noticiasHome .noticia .noticiaBox-body h4 {
   font-size: 1.2rem;
 }
 
+main.main section.contato .formBox label {
+  text-transform: uppercase;
+  color: #546A7B;
+  font-weight: 500;
+}
+
+main.main section.contato .formBox [type='text'],
+main.main section.contato .formBox [type='password'],
+main.main section.contato .formBox [type='date'],
+main.main section.contato .formBox [type='datetime'],
+main.main section.contato .formBox [type='datetime-local'],
+main.main section.contato .formBox [type='month'],
+main.main section.contato .formBox [type='week'],
+main.main section.contato .formBox [type='email'],
+main.main section.contato .formBox [type='number'],
+main.main section.contato .formBox [type='search'],
+main.main section.contato .formBox [type='tel'],
+main.main section.contato .formBox [type='time'],
+main.main section.contato .formBox [type='url'],
+main.main section.contato .formBox [type='color'],
+main.main section.contato .formBox textarea {
+  background: #F9F9F8;
+}
+
+main.main section.contato address {
+  padding: 0rem 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+main.main section.contato address div {
+  padding: 0.5rem 0;
+}
+
+main.main section.contato address div i,
+main.main section.contato address div svg {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #2ba6cb;
+}
+
+main.main section.quemSomos .qualidades {
+  border-top: 1px solid #edede9;
+  padding-top: 1rem;
+}
+
+main.main section h1 {
+  font-size: 2.4rem;
+}
+
 /* Medium and up */
 
 /* Large and up */
+
+section.noticias .noticia {
+  border-bottom: 1px solid #e8e8e3;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e8e8e3;
+  padding: 0.987rem 0.987rem;
+  margin-bottom: 0.987rem;
+  background: #F9F9F8;
+}
+
+section.noticias .noticia h2 {
+  font-size: 1.4rem;
+}
+
+section.noticias .noticia h2 a {
+  color: #11284B;
+}
+
+section.noticias .widget-sidebar {
+  border-bottom: 1px solid #e8e8e3;
+  padding: 0.987rem 0.987rem 0;
+  margin-bottom: 0.987rem;
+  background: #F9F9F8;
+}
+
+section.noticias .widget-sidebar h5 {
+  color: #11284B;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+section.noticias .widget-sidebar ul {
+  list-style-type: square;
+}
+
+section.noticias .widget-sidebar ul li {
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px dotted #edede9;
+}
+
+section.noticias .widget-sidebar ul li a {
+  color: #62929E;
+}
+
+section.noticias .widget-sidebar ul li a:hover,
+section.noticias .widget-sidebar ul li a:focus {
+  color: #11284B;
+}
+
+section.noticias .widget-sidebar ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
 
 .pagination-area .pagination li,
 .pagination-area .pagination li a {
@@ -521,10 +707,19 @@ footer.footer .tags .label {
   background: #546A7B;
 }
 
+footer .mapa {
+  margin-top: 3rem;
+}
+
+footer .mapa iframe {
+  height: 100vh;
+  width: 100vw;
+  max-height: 300px;
+}
+
 footer .copy {
   background-color: #171717;
   padding: 0.3rem;
-  margin-top: 2rem;
   color: #546A7B;
 }
 
@@ -544,6 +739,15 @@ footer .copy p {
     column-count: 2;
     -webkit-column-gap: 30px;
     column-gap: 30px;
+  }
+
+  main.main section.quemSomos .qualidades {
+    border: none;
+    border-right: 1px solid #edede9;
+  }
+
+  main.main section.quemSomos .qualidades:last-child {
+    border: none;
   }
 
   footer.footer address div {

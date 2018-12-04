@@ -3,7 +3,7 @@ main.main{
         padding: 3rem 0;
         border-top: 1px solid lighten($cor3, 17);
         &.servicos{
-            background: $cor2;
+            background: $branco;
             .servicoBox{
                 padding: 0.987rem 0;
                 &-left{
@@ -22,6 +22,32 @@ main.main{
                     vertical-align: top;
                     h4{
                         font-size: 1.2rem;
+                    }
+                    // p{
+                    //     margin-bottom: 0;
+                    // }
+                }
+            }
+            &-page{
+                .servico{
+                    border-bottom: 1px solid lighten($cor3, 15);
+                    padding-top: 1.2rem;
+                    .servicoBox{
+                        padding: 0.987rem 0;
+                        &-left{
+                            display: table-cell;
+                            width: 80px;
+                            max-width: 50px;
+                            padding-right: 0.6rem;
+                            i, svg{
+                                font-size: 3rem;
+                                // margin-right: 0.7rem;
+                                color: $cor4;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        border-bottom: none;
                     }
                 }
             }
@@ -70,6 +96,39 @@ main.main{
                 }
             }
         }
+        &.contato{
+            .formBox{
+                label{
+                    text-transform: uppercase;
+                    color: $cor5;
+                    font-weight: 500;
+                }
+                [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
+                    background: $cor2;
+                }
+            }
+            address{
+                padding: 0rem 0 0.5rem;
+                font-size: 0.9rem;
+                div{
+                    padding: 0.5rem 0;
+                    i, svg{
+                        font-size: 1rem;
+                        margin-right: 0.5rem;
+                        color: $cor7;
+                    }
+                }
+            }
+        }
+        &.quemSomos{
+            .qualidades{
+                border-top: 1px solid lighten($cor3, 17);
+                padding-top: 1rem;
+            }
+        }
+        h1{
+            font-size: 2.4rem;
+        }
     }
 }
 
@@ -84,6 +143,15 @@ main.main{
                     list-style: none;
                     column-count: 2;
                     column-gap: 30px;
+                }
+            }
+            &.quemSomos{
+                .qualidades{
+                    border: none;
+                    border-right: 1px solid lighten($cor3, 17);
+                    &:last-child{
+                        border: none;
+                    }
                 }
             }
         }

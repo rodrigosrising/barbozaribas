@@ -1,9 +1,19 @@
+.button{
+    background: $cor1;
+    &.buttonWide{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
 .leiaMais{
     color: $cor5;
-    border-bottom: 1px dotted $cor3;
+    // border-bottom: 1px dotted $cor3;
     padding-bottom: 0.2rem;
     i, svg{
         margin-right: 0.3rem;
         color: $cor7;
+    }
+    &:hover, &:focus{
+        color: $cor1;
     }
 }
